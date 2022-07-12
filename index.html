@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    
+    <title>Tucomprita.com</title>
+</head>
+<body>       
+    <header>
+        <h1>tucomprita</h1>
+    </header>
+
+    <!-- pantallaVacia -->
+
+    <section  id="pantallaVacia">
+        <div class="conteiner">
+            <h1>Tu lista está vacía</h1> 
+            <h2>:(</h2>     
+            <button class='btnAgregar' id='btnAgregar'>+</button>            
+        </div>                
+    </section> 
+
+
+    <!-- panallaAgregando -->
+
+    <section id='pantallaAgregando'>
+        <div class ="conteiner">
+            <div class ='cajaAgregando'>
+                <form class='formulario'>              
+                    <input  id ='formProducto' type="text" placeholder="Producto" maxlength="10"> 
+                    <div  class ="selector">                    
+                        <select id='formCategoria' type="text" name="categoria"  placeholder="Categoria" >
+                            <option>Categoria</option>              
+                            <option value="images/iconos/png/bebidas">Bebidas</option>
+                            <option value="images/iconos/png/frutas">Frutas</option>
+                            <option value="images/iconos/png/verduras">Verduras</option>
+                            <option value="images/iconos/png/lacteos">Lacteos</option>
+                            <option value="images/iconos/png/limpieza">Limpieza</option>
+                            <option value="images/iconos/png/higiene">Higiene</option>
+                        </select>                    
+                    </div>              
+                    <textarea  type='text' id="formComentario" cols="25" rows="8"  placeholder="Comentario..." maxlength="40"></textarea>
+                    <input class="btnAnadir" id='btnAnadir' type="button" value="Añadir">
+                </form>
+            </div>
+        </div>    
+    </section> 
+    
+
+    <!-- pantallaListado -->
+
+    <section id="pantallaListado">
+        <div class ="conteinerListado">
+            <ul class ="listado" id='listado'>
+            </ul>
+            <button class ='btnAgregar' id='btnAgregarListado'>+</button>            
+        </div>
+    </section>
+
+
+    <!-- pantallaDetalle -->
+
+    <section id="pantallaDetalle">
+        <div class ="conteiner" id="detalle">
+            <div class ="cajaDetalle">
+                <div class ="cerrar">
+                    <button class ="cerrarDetalle" id="cerrarDetalle">
+                        <img src="images/iconos/png/cruzado.png">
+                    </button>
+                </div>
+                <img src="./images/iconos/png/frutas" alt="" id="detalleCategoria">
+                <h1 id="detalleProducto">
+                    Mandarina
+                </h1>
+                <p id="detalleComentario">
+                    La mandarina mas chiquita que encuentres
+                </p>             
+            </div>
+        </div>
+    </section>
+    
+    <script src="code/json.js"></script>  
+</body>
+
+</html>
